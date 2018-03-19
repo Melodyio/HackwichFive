@@ -14,12 +14,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var myFriendsArray = ["Emily","Courtney","George"]
     
+    //Restaurant Image Data
+    var restaurantImageData = [String]()
+    
+    var kapoleiRestaurantsArray = ["Kapolei Kalapawai"]
+    
     
     @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         self.tableView.dataSource = self
+        tableView.delegate = self
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        
+        restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return myFriendsArray.count
+        return kapoleiRestaurantsArray.count
         
     }
     
@@ -43,8 +57,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         UITableViewCell {
     
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseldentifier")!
-            let text = myFriendsArray[indexPath.row]
+            let text = kapoleiRestaurantsArray[indexPath.row]
             cell.textLabel?.text = text
             return cell
             }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! detailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+            s1.imagePass = restaurantImageData[imageIndex!]
+        }
+        
+    }
+    
 }
