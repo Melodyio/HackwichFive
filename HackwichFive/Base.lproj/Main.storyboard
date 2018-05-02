@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sdd-6B-1rc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sdd-6B-1rc">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-aO-lwx">
-                                <rect key="frame" x="16" y="45" width="240" height="128"/>
+                                <rect key="frame" x="40" y="83" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -75,13 +75,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mix-eK-Rsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="-147"/>
+            <point key="canvasLocation" x="1747.5" y="-147.88732394366198"/>
         </scene>
         <!--Eats-->
         <scene sceneID="Qfj-Ov-mSS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5mH-Do-Vdq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eats" id="uXk-E9-SPo"/>
+                    <tabBarItem key="tabBarItem" title="Eats" image="restaurant" selectedImage="restaurant" id="uXk-E9-SPo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cBB-zQ-niS">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -102,6 +102,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sdd-6B-1rc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8hb-Zz-b67">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -143,7 +144,7 @@
         <scene sceneID="Gal-CJ-3gN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dY3-BI-PD4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="pFq-ZW-QDK"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map_marker" selectedImage="map_marker" id="pFq-ZW-QDK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YNC-DJ-Nhy">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -159,4 +160,8 @@
             <point key="canvasLocation" x="68" y="618"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_marker" width="30" height="30"/>
+        <image name="restaurant" width="30" height="30"/>
+    </resources>
 </document>

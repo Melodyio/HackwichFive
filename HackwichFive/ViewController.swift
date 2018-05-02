@@ -17,12 +17,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //Restaurant Image Data
     var restaurantImageData = [String]()
     
-    var kapoleiRestaurantsArray = ["Kapolei Kalapawai"]
+    var kapoleiRestaurantsArray = ["Kapolei Kalapawai","The Cheesecake Factory","Five Guys","Sura Hawaii","Moena Cafe","California Pizza Kitchen","Kickin Kajun"]
     
     
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
+        
+        self.navigationItem.title = "Kapolei Eats"
+        self.navigationController?.title = "Eats"
+        
+        
         self.tableView.dataSource = self
         tableView.delegate = self
         
@@ -78,5 +83,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
     }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "My Favorite Restaurants in Kapolei \(section)"
+    }
+    
     
 }
