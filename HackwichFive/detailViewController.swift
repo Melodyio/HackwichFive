@@ -11,18 +11,24 @@ import UIKit
 class detailViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var textView: UITextView!
     
     var imagePass: String?
+    var descriptionPass: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.lightGray
 
         // Do any additional setup after loading the view.
         
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
         }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

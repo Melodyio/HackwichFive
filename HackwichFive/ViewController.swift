@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //Restaurant Image Data
     var restaurantImageData = [String]()
+    var restaurantDescriptionData = [String] ()
     
     var kapoleiRestaurantsArray = ["Kapolei Kalapawai","The Cheesecake Factory","Five Guys","Sura Hawaii","Moena Cafe","California Pizza Kitchen","Kickin Kajun"]
     
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dict = NSDictionary(contentsOfFile: path!)
         
         restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        restaurantDescriptionData = dict!.object(forKey:"restaurantDescriptions") as! [String]
         
     }
 
@@ -80,6 +82,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let s1 = segue.destination as! detailViewController
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
+            
+            let s2 = segue.destination as!detailViewController
+            let textIndex = tableView.indexPathForSelectedRow?.row
+            s2.descriptionPass = restaurantDescriptionData[textIndex!]
         }
         
     }

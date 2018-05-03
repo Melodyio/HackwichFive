@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantDescriptions</key>
+	<array>
+		<string>Aloha and welcome to the new Kalapawai Cafe &amp; Deli – Kapolei! We pride ourselves in providing the most delicious coffee, deli sandwiches, lunch plates, salads &amp; pizzas to the heart of Kapolei while keeping the same friendly, neighborhood service that has made our two Kailua locations into perennial Hale’Aina and ‘Ilima Award winners for “Favorite Neighborhood Restaurant,” “Best Gourmet Comfort Food,” “Critic’s Choice” &amp; “People’s Choice.”</string>
+		<string>The Cheesecake Factory is a unique, upscale casual dining restaurant offering more than 250 menu selections including appetizers, pizza, pasta, seafood, steaks, salads, sandwiches and more. But save room for dessert! Try one of 50 delicious cheesecakes and desserts.</string>
+		<string>Five Guys founder Jerry Murrell&apos;s mother always told him, &quot;If you can give a good haircut or if you can serve a good drink at a bar or if you can serve a good hamburger, you can always make money in America.&quot;</string>
+		<string>If you&apos;re tired of eating the same dishes night after night, it&apos;s time for you to try something new. At Sura Hawaii, you can enjoy a different way to eat, adding depth and diversity to your palate. As a Korean BBQ restaurant, we&apos;re dedicated to perfectly cooked meats, vibrant flavors, and plenty of spice and seasoning. When you want to liven up the dining experience, we&apos;re the best destination in Honolulu. Make a reservation today!</string>
+		<string>Eric and Nicole bring success and their finest skills to Moena Cafe! Their desire is to serve the  locals and tourists alike and give them a taste of the local Hawaii foods that make our islands so unique. It was their dream to open this business together and now to see their dreams as entrepreneurs come to life in their very own restaurant is something they take much pride in! </string>
+		<string>California Pizza Kitchen is a polished casual dining restaurant chain that specializes in California-style pizza. The restaurant was started in 1985 by attorneys Rick Rosenfield and Larry Flax in Beverly Hills, California, United States.</string>
+		<string>At Kickin’ Kajun we specialize in Cajun style seafood boils stuffed with steamed potatoes and tender pieces of corn on the cob. We are committed to starting with live seafood and sourcing local ingredients whenever possible. Our steaming bag of seafood is perfect for groups and families. We ditch the china, provide you with bibs, and encourage you to get your hands dirty. In addition to seafood boils, we have a selection of fried baskets, Po&apos; Boy Sandwiches, and alcoholic beverages. </string>
+	</array>
 	<key>restaurantImages</key>
 	<array>
 		<string>kapoleiKalapawai</string>
